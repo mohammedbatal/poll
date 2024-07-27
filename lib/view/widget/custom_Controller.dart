@@ -15,7 +15,7 @@ class CustomController extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String selectedColor = 'Red';
+    String selectedColor = 'yes';
 
     return Container(
       margin: const EdgeInsets.all(15),
@@ -31,10 +31,10 @@ class CustomController extends StatelessWidget {
           children: [
             Text(
               questionText,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
             RadioListTile(
-              title: Text(optionOne, style: const TextStyle(fontSize: 20)),
+              title: Text(optionOne, style: const TextStyle(fontSize: 15)),
               value: optionOne,
               groupValue: selectedColor,
               onChanged: (value) {
@@ -46,7 +46,7 @@ class CustomController extends StatelessWidget {
               },
             ),
             RadioListTile(
-              title: Text(optionTow, style: const TextStyle(fontSize: 20)),
+              title: Text(optionTow, style: const TextStyle(fontSize: 15)),
               value: optionTow,
               groupValue: selectedColor,
               onChanged: (value) {
